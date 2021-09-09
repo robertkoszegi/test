@@ -1,0 +1,28 @@
+django-admin startproject mysite
+
+python manage.py startapp polls
+
+python manage.py runserver
+
+
+
+
+- create db with:
+CREATE DATABASE 'name'
+
+-ensure settings.py/DATABSE does not contain 'BASE_....', just the name string
+python manage.py migrate
+
+create modes in models.py
+
+add app reference to settings.py/ INSTALLED_APPS
+
+-specify __str__ override for fields that will have to return a string in the app
+
+
+ADMIN
+python3 manage.py createsuperuser
+
+in polls/admin.py, register modules that we want to see/edit on the admin site 
+
+
